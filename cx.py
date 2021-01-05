@@ -147,7 +147,7 @@ def update_transition_routes(flow, intents):
 	mask.FromJsonString("transitionRoutes")
 	flowRequest = df.UpdateFlowRequest(flow=flow, update_mask=mask)
 	flows_client.update_flow(request=flowRequest)
-	print(flow.transition_routes)
+	#print(flow.transition_routes)
 
 def update_nlu_type(flow, nlu_type):
 	flowPath = flow.name
